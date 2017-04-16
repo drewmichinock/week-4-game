@@ -28,22 +28,5 @@ $(document).ready(function() {
     $("#gem-emerald").attr("value", randomValue(1, 12))
     $("#gem-sapphire").attr("value", randomValue(1, 12))
 
-    // add attribute value on click
-
-    $(".gem").on("click", function() {
-
-
-
-    }
-
-
 
 });
-
-    var theTotal = 0;
-$('button').click(function(){
-   theTotal = Number(theTotal) + Number($(this).val());
-    $('.total').text("Total: "+theTotal);        
-});
-
-$('.total').text("Total: "+theTotal);   
