@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Week 4 Game: Crystals Collector</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <!-- end col-md-3 -->
+            <div class="col-md-6">
+                <h1 class="text-center">Crystals Collector</h1>
+                <br>
+            </div>
+            <!-- end col-md-6 -->
+            <div class="col-md-3"></div>
+            <!-- end col-md-3 -->
+        </div>
+        <!-- end row -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Rules</div>
+                    <div class="panel-body">
+                        <ol>
+                            <li>The game selects a random number at the start of the game</li>
+                            <li>There are four crystals to the right. By clicking on a crystal you will add a specific amount of points to your Player Score</li>
+                            <li>You win the game by matching your total score to the Random Number, you lose the game if your Player Score goes above the Random Number</li>
+                            <li>The value of each crystal is hidden from you until you click on it</li>
+                            <li>Each time when the game starts, the game will change the values of each crystal</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Score</div>
+                    <div class="panel-body">
+                        <div class="col-md-6">
+                            <h3 class="text-center">Wins</h3>
+                            <h3 class="text-center record-win">0</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="text-center">Losses</h3>
+                            <h3 class="text-center record-loss">0</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end col-md-4 -->
+            <div class="col-md-8">
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Random Number</div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <h3 class="text-center" id="random-number"></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col-md-6 -->
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Player Total</div>
+                        <div class="panel-body">
+                            <div class="col-md-12">
+                                <h3 class="text-center player-total"></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col-md-6 -->
+                <div class="col-md-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="col-md-3">
+                                <button id="gem-ruby" class="gem-btn"><img src="assets/images/ruby.jpg" alt="ruby" class="gem" id="ruby"></button>
+                            </div>
+                            <div class="col-md-3">
+                                <button id="gem-amber" class="gem-btn"><img src="assets/images/amber.jpg" alt="amber" class="gem" id="amber"></button>
+                            </div>
+                            <div class="col-md-3">
+                                <button id="gem-emerald" class="gem-btn"><img src="assets/images/emerald.jpg" alt="emerald" class="gem" id="emerald"></button>
+                            </div>
+                            <div class="col-md-3">
+                                <button id="gem-sapphire" class="gem-btn"><img src="assets/images/sapphire.jpg" alt="sapphire" class="gem" id="sapphire"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end col-md-8 -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container -->
+</body>
+
+</html>

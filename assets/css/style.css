@@ -1,0 +1,20 @@
+.gem {
+	height: 135px;
+	width: 135px;
+	color: #fff;
+	border: none;
+}
+
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    margin: 10px 0 14px 0;
+}
+
+button:hover {
+	border: 1px #ccc solid;
+}
